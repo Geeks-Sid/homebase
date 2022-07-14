@@ -12,28 +12,28 @@ sudo apt install apt-transport-https curl -y
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update -y
-sudo apt install brave-browser
+sudo apt install brave-browser -y
 
 # Setup rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Setup HTOP
-sudo apt-get install htop
+sudo apt-get install htop -y
 
 # Setup bat
-sudo apt-get install bat
+sudo apt-get install bat -y
 
 # Setup duf
-sudo apt-get install duf
+sudo apt-get install duf -y
 
 # Install dust
 brew tap tgotwig/linux-dust && brew install dust
 
 # Installing homebrew
-sudo apt-get install homebrew
+sudo apt-get install homebrew -y
 
 # Install pacstall
-sudo apt-get install pacstall
+sudo apt-get install pacstall -y
 
 # Download and install miniconda
 function _install_miniconda() {
@@ -71,13 +71,13 @@ sudo apt --fix-broken install
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 
 # Setup net tools
-sudo apt-get install net-tools
+sudo apt-get install net-tools -y
 
 # Install stretchly
-sudo apt-get install stretchly
+sudo apt-get install stretchly -y
 
 # Install gnome-tweaks
-sudo apt-get install gnome-tweaks
+sudo apt-get install gnome-tweaks -y
 
 
 # Install docker
